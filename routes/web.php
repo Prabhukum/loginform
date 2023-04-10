@@ -17,8 +17,12 @@ use  App\Http\Controllers\LoginController;
 //     return view('welcome');
 // });
 
+// Route::get('/', function () {
+//     return view('login');
+// });
 Route::get('/', function () {
-    return view('login');
+    return view('Task_2');
 });
+
 
 Route::post('submit',[LoginController::class,'create']);
