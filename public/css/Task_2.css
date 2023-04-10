@@ -69,19 +69,31 @@ color: #000000;
 opacity: 1;
 }
 
-.button{
-   top: 535px;
-   left: 957px;
-   width: 338px;
-   height: 48px;
-   /* UI Properties */
-   background: #213E97 0% 0% no-repeat padding-box;
-   opacity: 1;
+.button1{
+    top: 535px;
+    left: 957px;
+    width: 338px;
+    height: 48px;
+    /* UI Properties */
+    background: #213E97 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.lg1366, .card{
+    width: 1366px;
+    height: 768px;
 }
 
 .button_font{
 /* UI Properties */
-text-align: center;
+
+top: 547px;
+left: 1102px;
+width: 49px;
+height: 25px;
+/* UI Properties */
+text-align: left;
 font: normal normal bold 18px/15px Poppins;
 letter-spacing: 0.9px;
 color: #FFFFFF;
@@ -89,7 +101,18 @@ text-transform: uppercase;
 opacity: 1;
 }
 
+.abcd{
+    /* UI Properties */
+    top: 0px;
+    left: 0px;
+    width: 885px;
+    height: 768px;
+    /* UI Properties */
+    background: transparent linear-gradient(229deg, #8AB7E9B5 0%, #4D77C4 53%, #0033A1F2 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    }
+
 .card{
     border-radius: 0%;
-    margin: 15px;
+
 }

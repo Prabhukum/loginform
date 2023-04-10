@@ -10,6 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
+
+<link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
+
     <link rel="stylesheet" href={{asset('css/Task_2.css')}}>
     <title></title>
 </head>
@@ -17,13 +21,13 @@
 <body>
 
 
-        <div class="container-fluid ">
-            <div class="card">
+        <div class="container lg1366">
+            <div class="card-fluid">
           <div class="row d-flex justify-content-center align-items-center">
-           <div class="col-md-9 col-lg-8 col-xl-5">
+           <div class="col-8">
 
-              <img src="{{asset('assets/download.png')}}"
-                class="img-fluid" alt="Sample image">
+              <img src="{{asset('assets/login_img.png')}}"
+                class="img-fluid abcd" alt="Sample image">
             </div>
               <div class="col-md-8 col-lg-4 col-xl-4">
 
@@ -61,12 +65,11 @@
                       Remember me
                     </label>
                   </div>
-                  <a href="#!" class="text-body" style="text-decoration: none "><b >Forgot Your password?</a>
+                  <a href="#!" style="text-decoration: none;color:#0033A1; "><b >Forgot Your password?</a>
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn button button_font btn-lg"
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Next</button>
+                  <button type="button" class="button1 btn btn-primary">NEXT</button>
                   {{-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                       class="link-danger">Register</a></p> --}}
                 </div>
