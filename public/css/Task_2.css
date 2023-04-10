@@ -88,3 +88,8 @@ color: #FFFFFF;
 text-transform: uppercase;
 opacity: 1;
 }
+
+.card{
+    border-radius: 0%;
+    margin: 15px;
+}
