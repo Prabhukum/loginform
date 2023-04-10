@@ -7,17 +7,15 @@ background: #eee;
 } */
 .h-custom {
 height: calc(100% - 73px);
-
+background-color: #ffffff;
+border-radius: 0%;
+box-sizing: border-box;
 }
 @media (max-width: 450px) {
 .h-custom {
-height: 885px;
+height: 100%;
 
 }
-}
-
-.img-fluid{
-
 }
 
 .sub_head{
@@ -28,9 +26,65 @@ height: 885px;
     height: 20px;
     /* UI Properties */
     text-align: left;
-    font: normal normal medium 14px/36px Poppins;
+    font: normal normal medium 14px/36p Poppins;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
     font-size: 14px;
+}
+
+.mail_id{
+    top: 349px;
+    left: 959px;
+
+    height: 17px;
+    text-align: left;
+    font: normal normal medium 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.frm_card{
+/* Layout Properties */
+/* top: 349px;
+left: 957px;
+width: 338px;
+height: 136px; */
+/* UI Properties */
+opacity: 1;
+}
+
+.Password{
+/* Layout Properties */
+/* top: 411px;
+left: 958px;
+width: 58px;
+height: 17px; */
+/* UI Properties */
+text-align: left;
+font: normal normal medium 12px/18px Poppins;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.button{
+   top: 535px;
+   left: 957px;
+   width: 338px;
+   height: 48px;
+   /* UI Properties */
+   background: #213E97 0% 0% no-repeat padding-box;
+   opacity: 1;
+}
+
+.button_font{
+/* UI Properties */
+text-align: center;
+font: normal normal bold 18px/15px Poppins;
+letter-spacing: 0.9px;
+color: #FFFFFF;
+text-transform: uppercase;
+opacity: 1;
 }

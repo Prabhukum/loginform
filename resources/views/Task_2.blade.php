@@ -15,37 +15,40 @@
 </head>
 
 <body>
+
     <section class="vh-100">
-        <div class="container-fluid h-custom" style="width:885px height:768px">
+        <div class="container-fluid h-custom">
           <div class="row d-flex justify-content-center align-items-center h-100">
-           <div class="col-md-9 col-lg-8 col-xl-5">
+           <div class="col-md-9 col-lg-6 col-xl-5">
               <img src="{{asset('assets/download.png')}}"
                 class="img-fluid" alt="Sample image">
             </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div class="col-md-8 col-lg-4 col-xl-4">
               <form>
-                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
-                     <img src="{{asset('assets/header.png')}}" alt="">
-                     <div class=""></div>
-                </div>
 
-                <div class="divider d-flex align-items-center my-4">
-                  <h3 class="sub_head mb-4">Welcome to Acra Lending Broker Portal</h3>
+                <div class="container d-flex flex-column justify-content-lg-center">
+                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
+                     <img src="{{asset('assets/header.png')}}" alt="">
+                    </div>
+
+                <div class="divider d-flex align-items-center justify-content-lg-center my-4">
+                  <h2 class="sub_head mb-4">Welcome to Acra Lending Broker Portal</h2>
                 </div>
 
                 <!-- Email input -->
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example3">Email address</label>
-                    <input type="email" id="form3Example3" class="form-control form-control-lg"
-                    placeholder="Enter a valid email address" />
+                <div class="form-outline frm mb-4">
+                    <label class="form-label mail_id" for="form3Example3">Email ID</label>
+                    {{-- <input type="email" id="form3Example3" class="form-control form-control-lg"
+                    placeholder="Enter a valid email address" /> --}}
+                    <hr>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-3">
                     <label class="form-label" for="form3Example4">Password</label>
-                  <input type="password" id="form3Example4" class="form-control form-control-lg"
-                    placeholder="Enter password" />
-
+                  {{-- <input type="password" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Enter password" /> --}}
+                    <hr>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center">
@@ -56,16 +59,16 @@
                       Remember me
                     </label>
                   </div>
-                  <a href="#!" class="text-body">Forgot password?</a>
+                  <a href="#!" class="text-body bg-primary">Forgot password?</a>
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn btn-primary btn-lg"
+                  <button type="button" class="btn button button_font btn-lg"
                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Next</button>
-                  <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                      class="link-danger">Register</a></p>
+                  {{-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                      class="link-danger">Register</a></p> --}}
                 </div>
-
+            </div>
               </form>
             </div>
           </div>
