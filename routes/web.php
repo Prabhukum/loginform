@@ -20,7 +20,7 @@ use  App\Http\Controllers\LoginController;
 // Route::get('/', function () {
 //     return view('login');
 // });
-Route::get('/', function () {
+Route::get('/Task_2', function () {
     return view('Task_2');
 });
 
@@ -30,4 +30,8 @@ Route::post('submit',[LoginController::class,'create']);
 
 Route::get('/View-verify-page', function () {
     return view('Verify_page');
+});
+
+Route::get('/Dashboard', function () {
+    return view('Dashboard');
 });
