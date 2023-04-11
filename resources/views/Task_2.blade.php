@@ -14,8 +14,9 @@
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 
 
+
     <link rel="stylesheet" href={{asset('css/Task_2.css')}}>
-    <title></title>
+    <title>Login</title>
 </head>
 
 <body>
