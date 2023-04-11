@@ -26,3 +26,8 @@ Route::get('/', function () {
 
 
 Route::post('submit',[LoginController::class,'create']);
+// Route::get('View-verify-page',[LoginController::class,'verifypage']);
+
+Route::get('/View-verify-page', function () {
+    return view('Verify_page');
+});
