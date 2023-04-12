@@ -3,6 +3,7 @@
 
 
 <div class="py-5">
+  <div class="row">
   <body class="p-3 m-0 border-0 bd-example">
   <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -14,8 +15,9 @@
         </form>
       </div>
     </nav>
-
+    </div>
     <!-- module session -->
+    <div class="row col-4">
     <div class="d-flex align-items-start">
   <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
     <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
@@ -24,11 +26,9 @@
     <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
     <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
   </div>
-    <div class="col-8">
-    <div class="tab-content" id="nav-tabContent">
-
-    </div>
-    <div class="d-flex flex-row mt-3">
+  </div>
+  <div class="row col-8">
+      <div class="d-flex flex-row mt-3">
         <h1 class="text_head">pipe line</h1>
                 <div class="btn-group mod px-5" role="group" aria-label="Basic radio toggle button group">
             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -47,7 +47,8 @@
   </div>
   </div>
   </div>
-  <!-- module session ends-->
-    </div>
+  </div>
+  <!-- module session ends-->    
+</div>
      </body>
 </html>
