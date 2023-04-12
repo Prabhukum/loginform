@@ -17,9 +17,9 @@ use  App\Http\Controllers\LoginController;
 //     return view('welcome');
 // });
 
-// Route::get('/', function () {
-//     return view('login');
-// });
+Route::get('/', function () {
+    return view('login');
+ });
 Route::get('/Task_2', function () {
     return view('Task_2');
 });

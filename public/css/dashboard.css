@@ -16,8 +16,8 @@ form {
     box-shadow: 0px 2px 2px #00000012;
     border: 0.30000001192092896px solid #C9C9C9;
     border-radius: 3px;
-   opacity: 1;
-   /* margin: 0 0 30px; */
+    opacity: 1;
+    /* margin: 0 0 30px; */
 
 }
 
@@ -72,7 +72,8 @@ input[type="search"]:focus {
 
 .pipe-head {
     width: 700px;
-    border: none
+    border: none;
+
 }
 
 .section_btn {
@@ -81,8 +82,93 @@ input[type="search"]:focus {
 }
 
 .bg_search {
-    background-color: #EFF5FC;
+    background-color: #FCFCFC;
     padding: 12px;
+
     box-sizing: content-box;
 }
 
+.reset-button {
+
+    width: 73px;
+
+    height: 32px;
+
+    background: #9C9C9C 0% 0% no-repeat padding-box;
+
+    border-radius: 2px;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+}
+
+.Go-button {
+
+    width: 43px;
+
+    height: 32px;
+
+    background: #0033A1 0% 0% no-repeat padding-box;
+
+    border-radius: 2px;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+}
+
+.search-panel {
+
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+
+    box-shadow: 0px 3px 6px #00000029;
+
+    border: 1px solid #E8F3FF;
+
+    border-radius: 5px;
+
+    margin-bottom: 40px;
+
+}
+
+.search-by {
+
+    margin: 10px;
+
+    height: 69px;
+
+    background: #EFF5FC 0% 0% no-repeat padding-box;
+
+    box-shadow: 0px 2px 2px #00000014;
+
+    border-radius: 5px;
+
+}
+
+.bellicon {
+
+    width: 21.47px;
+
+    height: 21.47px;
+
+}
+
+.navbar-nav>li:last-child {
+
+    border-left: 1px solid #C5C5C5;
+
+}
+
+.usericon {
+
+
+
+
+    width: 38.15px;
+
+    height: 38.15px;
+
+}
