@@ -23,9 +23,9 @@ form {
 
 input[type="search"] {
 
-    width: 250px;
+
     border: none;
-    background: transparent;
+    background: whitesmoke;
     margin: 0;
     padding: 7px 8px;
     font-size: 14px;
@@ -146,6 +146,10 @@ input[type="search"]:focus {
 
     border-radius: 5px;
 
+}
+.table_bg{
+    background-color:#E3ECF6 ;
+    opacity: 100%;
 }
 
 .bellicon {

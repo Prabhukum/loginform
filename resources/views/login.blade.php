@@ -1,96 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
-    <title>login/Signup</title>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href={{asset('css/login.css')}}>
 </head>
 
+
+
 <body>
-   <div class="container-fluid ">  {{--bg-dark text-white --}}
-        <div class="d-flex flex-row justify-content-center col-12">
-            <h1 class="mt-4">Signup</h1>
-        </div>
-        <div class="d-flex flex-row justify-content-center mt-5">
-            <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                </div>
+  <form action="/register" method="post">
+    <h1>Registration Form</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name" required>
 
-                {{-- password session start --}}
-                <div class="row g-1 align-items-center mt-2">
-                    <div class="col-lg-12">
-                      <label for="inputPassword6" class="col-form-label">Password</label>
-                    </div>
-                    <div class="col-lg-12 col-md-6">
-                      <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
-                    </div>
-                    <div class="col-lg-12  col-md-6 ">
-                      <span id="passwordHelpInline" class="form-text" class="hidden-sm" >
-                        **Must be 8-20 characters long.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-               {{-- password session ends --}}
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
 
-            </div>
-           </div>
-           <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-          </form>
-    </div>
-</body>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
 
-</html>
+    <label for="present-address">Present Address:</label>
+    <textarea id="present-address" name="present_address" rows="3" placeholder="Present Address" required></textarea>
+
+    <label for="permanent-address">Permanent Address:</label>
+    <textarea id="permanent-address" name="permanent_address" rows="3" placeholder="Permanent Address" required></textarea>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+
+    <label for="upload-file">Upload File:</label>
+    <input type="file" id="upload-file" name="upload_file">
+
+    <label>Gender:</label>
+    <label for="gender-male">
+      <input type="radio" id="gender-male" name="gender" value="male"> Male
+    </label>
+    <label for="gender-female">
+      <input type="radio" id="gender-female" name="gender" value="female"> Female
+    </label>
+    <label for="gender-other">
+        <input type="radio" id="gender-other" name="gender" value="other"> Other
+      </label>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="3" placeholder="Comments"></textarea>
+
+      <label for="captcha">Captcha:</label>
+      <input type="text" id="captcha" name="captcha" placeholder="Enter Captcha" required>
+      <!-- Replace the below line with actual captcha implementation -->
+
+      <!-- Example of a basic captcha -->
+      {{-- <img src="captcha_image.jpg" alt="Captcha Image" style="width: 150px; height: auto;">
+      <br>
+      <label for="captcha">Enter the text above:</label> --}}
+
+      <input type="submit" value="Submit">
