@@ -13,21 +13,18 @@
                                      </div>
 
                                     <div class="d-flex justify-content-lg-center">
-                                    <h2 class="sub_head mb-4"> <strong> Welcome to Acra Lending Broker Portal</strong></h2>
+                                    <h2 class="sub_head mb-4"> <strong>We Need To Verify Your Identity</strong></h2>
                                     </div>
                                     <!-- Email input -->
-                                        <div class="px-5">
-                                        <input type="text" class="login_email" autocomplete="off" placeholder="Email ID">
-                                        <input type="password" class="login_password"  autocomplete="off" placeholder="Password">
+                                        <div class="px-5 mb-3">
+                                   <input type="number" class="login_password"  autocomplete="off" placeholder="+1 *******20">
                                         </div>
                                       <!-- Checkbox -->
                                     <div class="px-5">
-                                    <div class="d-flex align-items-center justify-content-around ">
-                                    <input class="form-check-input " style="margin:0px" type="checkbox" id="form2Example3" />
-                                    <label class="form-check-label" for="form2Example3" style=" font-size:12px;"> Remember me </label>
-                                    <a href="" style="text-decoration: none;color:#0033A1; padding:12px; font-size:12px;"><b>Forgot Your password?</a>
+                                    <div class="d-flex align-items-start justify-content-start">
+                                        <p >If your number is incorrect please reach out to <br> <strong><a href="" style="text-decoration: none"> itsupport@acrabrokerlinks.com </a></strong> </p>
                                     </div>
-                                    <a href="{{asset('Second_page')}}"><button type="button" class="button1 btn btn-primary">NEXT</button></a>
+                                    <a href="{{asset('Third_page')}}"><button type="button" class="button1 btn btn-primary">SEND TEXT</button></a>
                                        </div>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@
 <div class="container-fluid border">
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <div class="row  ">
+        <div class="row">
             <div class="col-3">
                 <img src="{{asset('assets/header.png')}}" class="Logo" alt="image">
             </div>

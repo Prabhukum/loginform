@@ -13,10 +13,6 @@ use  App\Http\Controllers\LoginController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
     return view('login');
  });
@@ -24,12 +20,14 @@ Route::get('/Task_2', function () {
     return view('Task_2');
 });
 
-
 Route::post('submit',[LoginController::class,'create']);
 // Route::get('View-verify-page',[LoginController::class,'verifypage']);
 
-Route::get('/View-verify-page', function () {
-    return view('Verify_page');
+Route::get('/Second_page', function () {
+    return view('Second_page');
+});
+Route::get('/Third_page', function () {
+    return view('Third_page');
 });
 
 Route::get('/Dashboard', function () {
