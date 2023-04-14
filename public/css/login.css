@@ -1,40 +1,66 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
-   padding: 12px;
-  }
+    padding: 12px;
+}
 
-
-  form {
+form {
     max-width: 800px;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
 
-  input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="file"], textarea {
-    width: 100%;
-    padding: 10px;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select.form-control,
+input[type="file"],
+textarea {
+
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    border-bottom-color: #6A679E;
+}
 
-  input[type="radio"] {
+input[type="password"],
+select.form-control {
+
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    border-bottom-color: #6A679E;
+
+}
+
+input::placeholder {
+
+    font-weight: bold;
+    opacity: 0.8;
+    color: black;
+
+}
+
+input[type="radio"] {
     margin-right: 10px;
-  }
+}
 
-  select {
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
+}
 
-  input[type="submit"] {
+input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -42,14 +68,14 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
+}
 
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #0056b3;
-  }
+}
 
-  label {
+label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
-  }
+
+}

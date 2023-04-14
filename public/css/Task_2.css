@@ -1,20 +1,5 @@
-.divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
-}
-
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
-
-}
-}
-
-.sub_head{
-   /* Layout Properties */
+.sub_head {
+    /* Layout Properties */
     top: 279px;
     left: 987px;
     width: 277px;
@@ -28,27 +13,7 @@ height: 100%;
     font-size: 14px;
 }
 
-.mail_id{
-    top: 349px;
-    left: 959px;
-
-    height: 17px;
-    text-align: left;
-    font: normal normal medium 12px/18px Poppins;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-}
-
-.Password{
-text-align: left;
-font: normal normal medium 12px/18px Poppins;
-letter-spacing: 0px;
-color: #000000;
-opacity: 1;
-}
-
-.button1{
+.button1 {
     top: 535px;
     left: 957px;
     width: 338px;
@@ -60,60 +25,44 @@ opacity: 1;
     margin-top: 12px;
 }
 
-.screen, .card{
-    width: 1366px;
+.screen,
+.card {
+    /* width: 1366px; */
     height: 768px;
 }
 
-.button_font{
-/* UI Properties */
-
-top: 547px;
-left: 1102px;
-width: 49px;
-height: 25px;
-/* UI Properties */
-text-align: left;
-font: normal normal bold 18px/15px Poppins;
-letter-spacing: 0.9px;
-color: #FFFFFF;
-text-transform: uppercase;
-opacity: 1;
-}
-
-.login_email{
-     top: 349px;
+.login_email {
+    top: 349px;
     left: 957px;
     width: 338px;
     height: 40px;
     border: none;
-	border-bottom: 1px solid #D1D1D4;
+    border-bottom: 1px solid #D1D1D4;
     font: normal normal bold 12px/18px Poppins;
     color: #000000;
-	background: none;
+    background: none;
     font-family: sans-serif;
 
 }
 
-.login_password{
-
+.login_password {
     top: 400px;
     left: 957px;
     width: 338px;
     height: 40px;
     border: none;
-	border-bottom: 1px solid #D1D1D4;
+    border-bottom: 1px solid #D1D1D4;
     font: normal normal bold 12px/18px Poppins;
     color: #000000;
-	background: none;
+    background: none;
     font-family: sans-serif;
 }
 
 .login_email:active,
 .login_email:focus,
 .login_email:hover {
-	outline: none;
-	border-bottom-color: #6A679E;
+    outline: none;
+    border-bottom-color: #6A679E;
     border-bottom: 1px solid #D1D1D4;
     font-family: sans-serif;
     font-size: 12px;
@@ -122,19 +71,14 @@ opacity: 1;
 .login_password:active,
 .login_password:focus,
 .login_password:hover {
-	outline: none;
-	border-bottom-color: #6A679E;
+    outline: none;
+    border-bottom-color: #6A679E;
     border-bottom: 1px solid #D1D1D4;
     font-family: sans-serif;
     font-size: 12px;
 }
 
-
-.card{
+.card {
     border-radius: 0%;
 
-}
-
-.rem_box{
-    font-size: 12px;
 }

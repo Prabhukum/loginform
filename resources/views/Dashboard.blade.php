@@ -72,16 +72,16 @@
 
 
 
-        <div class="content  p-4">
+        <div class="content  vw-100 p-4">
             <div class="pipe-head d-flex justify-content-between mb-3">
                 <div>
                     <p><strong> pipe line</strong></p>
                 </div>
-                <div class="btn-group section_btn" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary section_btn">Scenarios</button>
-                    <button type="button" class=" btn active section_btn">Active</button>
-                    <button type="button" class=" btn section_btn">Funded</button>
-                    <button type="button" class="btn  section_btn">Cancelled/Declined</button>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn1">Scenarios</button>
+                    <button type="button" class=" btn1">Active</button>
+                    <button type="button" class=" btn1">Funded</button>
+                    <button type="button" class="btn1"  style="width: 141px;">Cancelled/Declined</button>
                 </div>
 
             </div>
@@ -108,9 +108,9 @@
             </div>
             {{---------------- Tables ------------------}}
 
-                 <div class="shadow border">
-                <table id="example" class="table " style="border-radius: 12px;">
-                    <thead class="thead">
+                 <div class="shadow border p-3">
+                <table id="example" class="table" style="border-radius: 12px;">
+                    <thead class="thead ">
                         <th>Scenario Name <i class="fa-thin fa-arrow-down-wide-short" style="color: #8ab7e9;"></i></th>
                         <th>Action <i class="fa fa-thin fa-arrow-down-wide-short" style="color: #8ab7e9;"></i></th>
                         <tr>
@@ -174,6 +174,87 @@
                             <td>2011-04-25</td>
                             <td>$162,700</td>
                         </tr>
+                        <tr>
+                            <td>Scenario-3</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009-01-12</td>
+                            <td>2011-04-25</td>
+                            <td>$86,000</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-4</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012-03-29</td>
+                            <td>2011-04-25</td>
+                            <td>$433,060</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-5</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008-11-28</td>
+                            <td>2011-04-25</td>
+                            <td>$162,700</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-3</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009-01-12</td>
+                            <td>2011-04-25</td>
+                            <td>$86,000</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-4</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012-03-29</td>
+                            <td>2011-04-25</td>
+                            <td>$433,060</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-5</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008-11-28</td>
+                            <td>2011-04-25</td>
+                            <td>$162,700</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-3</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009-01-12</td>
+                            <td>2011-04-25</td>
+                            <td>$86,000</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-4</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012-03-29</td>
+                            <td>2011-04-25</td>
+                            <td>$433,060</td>
+                        </tr>
+                        <tr>
+                            <td>Scenario-5</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008-11-28</td>
+                            <td>2011-04-25</td>
+                            <td>$162,700</td>
+                        </tr>
 
                     </tbody>
                 </table>
@@ -189,6 +270,19 @@
 </div>
 </div>
 <script>
-    let table = new DataTable('#example');
+$(document).ready(function () {
+
+    $('#example').DataTable({
+    scrollY: '250px',
+    scrollCollapse: true,
+    paging: true,
+
+});
+
+});
+$(".btn1").click(function(){
+        $(".btn1").removeClass("active");
+        $(this).addClass("active");
+    });
     </script>
 </div>
